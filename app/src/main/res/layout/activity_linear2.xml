@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#995F3AB7"
+    tools:context=".LinearActivity"
+    android:id="@+id/constraintLayout"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/txtdisplay"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:gravity="center_horizontal"
+        android:paddingTop="25dp"
+        android:text="chooze"
+        android:textSize="30dp"
+         />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:background="@color/white"
+        android:orientation="horizontal">
+
+        <Button
+            android:layout_width="188dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_margin="10dp"
+            android:text="smash"
+            tools:layout_editor_absoluteX="86dp"
+            tools:layout_editor_absoluteY="341dp" />
+
+        <Button
+            android:layout_width="183dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_margin="10dp"
+            android:text="pass"
+            tools:layout_editor_absoluteX="254dp"
+            tools:layout_editor_absoluteY="341dp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+
+        android:orientation="vertical">
+    </LinearLayout>
+
+<Button
+    android:id="@+id/regulationsbtn"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:text="regulations"/>
+
+    <Button
+        android:id="@+id/gotogame"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Goto game"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/iv2" />
+
+</LinearLayout>
+
+
+
+
+
+
